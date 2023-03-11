@@ -25,6 +25,7 @@ import enough from './music/Enough - NEFFEX.mp3'
 import immortal from './music/Immortal - NEFFEX.mp3';
 import playDead from './music/Play Dead - NEFFEX.mp3';
 import winning from './music/Winning - NEFFEX.mp3';
+import house from './music/House-Of-Memories.mp3';
 import { Height } from '@mui/icons-material';
 import { ThemeContext } from '@emotion/react';
 // #endregion ---------------------------------------------------------------
@@ -66,7 +67,7 @@ const PSlider = styled(Slider)(({theme, ...props}) => ({
 // #endregion ---------------------------------------------------------------
 
 
-const playlist = [fade, enough, immortal, playDead, winning];
+const playlist = [fade, enough, immortal, playDead, winning,house];
 
 
 export default function Player() {
