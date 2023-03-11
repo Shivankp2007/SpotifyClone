@@ -1,3 +1,76 @@
-@media  screen (max-witdt) {
+@media  screen and (max-width:376px) {
+    .SideNav{
+        width: 200px;
+        display: none;
+    }
+    .App{
+        width: 375px;
+        height: 1000px;
+    }
+    .top-SideNav{
+        width: 200px;
+    }
+    .Content{
+        left: 0;
+        width: 375px;
+    }
+    .Content-top{
+        padding: 0;
+        width: 30px;
+        position: fixed;
+    }
+    .Content-middle{
+        height: 1000px;
+    background-color: #181818;
+    width: 375px;
+    }
+    .Content{
+        background-color: #181818;
+        height: 1000px;
+        overflow-x: hidden;
+    }
+    .middle-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-row{
+        position: relative;
+        top: 326px;
+        height: 269px;
+    }
+    .middle-card{
+        width: 340px;
+    }
+    .row{
+        height: 333px;
+        width: 375px;
+        overflow-x: scroll;
+    }
+    .row::-webkit-scrollbar-thumb{
+        background-color: transparent;
+    }
+    .Name{
+        margin-top:10px;
+    }
+    #root{
+        height: 1000px;
+        width: 375px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .item a{
+        width: 300px;
+    }
+    .css-15ype0w-MuiPaper-root {
+        width: 375px;
+    }
     
+    .item{
+        width: 157px;
+        height: 200px;
+    }
+    .css-15ype0w-MuiPaper-root{
+        width: 100px;
+    }
 }
