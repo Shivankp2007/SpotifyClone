@@ -1,4 +1,49 @@
 .Content-Up-p{
+
     background-image: linear-gradient(rgb(255, 170, 22),#181818);
     height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.Content-bottom{
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    position: absolute;
+    padding: 20px 24px 20px 24px;
+}
+plaintextname{
+    font-size: 66px;
+    font-weight: bolder;
+}
+plaintext{
+    font-size: 15px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+plaintextinfo{
+    display: flex;
+    align-items: center;
+}
+plaintextinfo ul{
+    display: flex;
+    align-items: center;
+}
+.li{
+    margin-left: 20px;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.Content-down{
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+}
+.Content-actions{
+    width: 100%;
+    height: 80px;
 }

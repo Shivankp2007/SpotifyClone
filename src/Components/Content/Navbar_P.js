@@ -2,11 +2,15 @@ import React from 'react';
 import Back from '../Middle/Images/Back.png'
 import Front from '../Middle/Images/Front.png';
 import Profile from '../Middle/Images/Profile.png'
-import logo from '../Middle/Images/logo.jpg'
+import logo from '../Middle/Images/logo.jpg';
+import play from '../Middle/Images/play.svg'
+import { ThreeDRotationRounded } from '@mui/icons-material';
+import like from '../Middle/Images/like.svg'
 
 function Navbar_P() {
   return (
-    <div className="Content-Up-p">
+    <div className="Contentp">
+        <div className="Content-Up-p">
         <div className="Content-top">
             <div className="top-left">
             <button className="bck-frt-btn"><img src={Back} alt="" /></button>
@@ -25,17 +29,31 @@ function Navbar_P() {
         </div>
         <div className="Content-bottom">
             <plaintext>Playlist</plaintext>
-            <plaintext>Hot Hits India</plaintext>
+            <plaintextname>Hot Hits India</plaintextname>
             <plaintextdown>The hottest tracks in India. Cover:Sam Smith.</plaintextdown>
             <plaintextinfo>
-                <img src={logo} alt="" />
+                <img className='logo' src={logo} alt="" />
                 <name>Spotify</name>
                 <ul>
                     <li>93,864 likes</li>
-                    <li>51 songs,about 2hr 30min</li>
+                    <li className='li'>51 songs,about 2hr 30min</li>
                 </ul>
             </plaintextinfo>
         </div>
+    </div>
+    <div className="Content-down">
+    <div className="Content-actions">
+        <span className="play-btn">
+            <img src={play} alt="" />
+        </span>
+        
+        <img src={like} alt="" />
+        <img src={ThreeDRotationRounded} alt="" />
+    </div>
+    <div className="Content-playlist">
+    </div>
+    </div>
+    
     </div>
   )
 }
