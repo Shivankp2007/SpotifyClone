@@ -3,9 +3,11 @@ import Back from '../Middle/Images/Back.png'
 import Front from '../Middle/Images/Front.png';
 import Profile from '../Middle/Images/Profile.png'
 import logo from '../Middle/Images/logo.jpg';
-import play from '../Middle/Images/play.svg'
+import play from '../Middle/Images/play.png'
 import { ThreeDRotationRounded } from '@mui/icons-material';
-import like from '../Middle/Images/like.svg'
+import like from '../Middle/Images/like.png'
+import Threedotp from '../Middle/Images/Threedotp.svg'
+
 
 function Navbar_P() {
   return (
@@ -48,12 +50,9 @@ function Navbar_P() {
         </span>
         
         <img src={like} alt="" />
-        <img src={ThreeDRotationRounded} alt="" />
-    </div>
-    <div className="Content-playlist">
+        <img className='threedotp' src={Threedotp} alt="" />
     </div>
     </div>
-    
     </div>
   )
 }
