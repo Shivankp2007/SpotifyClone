@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {
     styled, Typography, Slider,
-    Paper, Stack, Box,
+    Paper, Stack, Box
 } from '@mui/material';
 
 
@@ -27,16 +27,15 @@ import playDead from './music/Play Dead - NEFFEX.mp3';
 import winning from './music/Winning - NEFFEX.mp3';
 import house from './music/House-Of-Memories.mp3';
 import mok from './music/Mockingbird - Eminem_128-(DJMaza).mp3';
-import { Height } from '@mui/icons-material';
-import { ThemeContext } from '@emotion/react';
 // #endregion ---------------------------------------------------------------
 
 // #region -------- Styled Components -----------------------------------------
 const Div = styled('div')(({theme}) => ({
     backgroundColor: 'black',
     height:'300px',
-    width:'100vw',
+    width:'100%',
     paddingTop: theme.spacing(6),
+    alignItems:'center'
 }))
 
 const CustomPaper = styled(Paper)(({theme}) => ({
@@ -48,13 +47,14 @@ const CustomPaper = styled(Paper)(({theme}) => ({
     flexDirection:'column',
     bottom:0,
     height:'90px',
+    alignItems:'center'
     
 }))
 
 const PSlider = styled(Slider)(({theme, ...props}) => ({
     color: 'white',
     height: 2,
-    width:'200px',
+    width:'600px',
     '&:hover': {
         cursor: 'pointer',
     },

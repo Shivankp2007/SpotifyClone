@@ -28,6 +28,8 @@
         background-color: #181818;
         height: 1000px;
         overflow-x: hidden;
+        flex-direction: row-reverse;
+        
     }
     .middle-row {
         display: flex;
