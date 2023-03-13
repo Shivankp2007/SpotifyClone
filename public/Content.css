@@ -9,9 +9,31 @@
     width: 100%;
     height: 420px;
 }
+.time{
+    width: 20px;
+    height: 20px;
+}
 .Content-playlist{
     height: 100vh;
+    width: 170vh;
+    padding: 20px;
+}
+text{
+    color: gray;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.playlist-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+
+}
+.underline{
     width: 100%;
+    height: 1px;
+    background-color: gray;
+    opacity: 50%;
 }
 .Content-bottom{
     display: flex;
@@ -81,7 +103,57 @@ plaintextinfo ul{
     width: 53px;
     transition: 5ms;
 }
+.Song{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.song-img{
+    width: 40px;
+    height: 40px;
+    margin: 0 16px 0 16px;
+}
+no{
+    color: gray;
 
+}
+textname{
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+}
+textnameinfo{
+    color: gray;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.Song-name{
+    display: flex;
+    flex-direction: column;
+}
 
+.date{
+    margin-right: 75px;
+}
+.song-1{
+    width: 260px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Song-details{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 294px;
+    width: 1305px;
+}
 
-
+::-webkit-scrollbar-thumb:not(:hover){
+    background-color: transparent;
+    transition: 10s;
+}

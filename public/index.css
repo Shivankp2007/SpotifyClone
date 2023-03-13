@@ -71,7 +71,7 @@ body{
     align-items: center;
 }
 ::-webkit-scrollbar{
-    background-color: #121212;
+    background-color: transparent;
     z-index: 0;
 
 }
@@ -86,6 +86,7 @@ body{
 
 body{
 font-family: 'Nunito', sans-serif;
+scrollbar-gutter: stable both-edges;
 
 
 }
