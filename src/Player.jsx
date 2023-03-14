@@ -27,8 +27,15 @@ import playDead from './music/Play Dead - NEFFEX.mp3';
 import winning from './music/Winning - NEFFEX.mp3';
 import house from './music/House-Of-Memories.mp3';
 import mok from './music/Mockingbird - Eminem_128-(DJMaza).mp3';
+import bones from './music/bones.mp3';
 // #endregion ---------------------------------------------------------------
+//img
+import mokm from './Components/Middle/Images/mokm.jpg'
+import housem from './Components/Middle/Images/housem.jpg'
+import bonesm from './Components/Middle/Images/bonesm.jpg'
 
+
+import play from './Components/Middle/Images/play.png'
 // #region -------- Styled Components -----------------------------------------
 const Div = styled('div')(({theme}) => ({
     backgroundColor: 'black',
@@ -68,15 +75,18 @@ const PSlider = styled(Slider)(({theme, ...props}) => ({
 // #endregion ---------------------------------------------------------------
 
 
-const playlist = [house,mok,fade, enough, immortal, playDead, winning];
+const playlist = [bones,house,mok,fade, enough, immortal, playDead, winning];
+const Image = [bonesm,housem,mokm,]
 
 
 export default function Player() {
     const audioPlayer = useRef()
+    const ImagePlayer = useRef()
 
     const [index, setIndex] = useState(0);
 
     const [currentSong] = useState(playlist[index]);
+    const [currentSongImg] = useState(Image[index]);
 
     const [isPlaying, setIsPlaying] = useState(false);
     const [volume, setVolume] = useState(30);
@@ -136,11 +146,19 @@ export default function Player() {
         if(index >= playlist.length - 1) {
             setIndex(0);
             audioPlayer.current.src = playlist[0];
+            ImagePlayer.current.src = Image[0]
             audioPlayer.current.play();
+            if(audioPlayer.current.mute(true)){
+                audioPlayer.current.mute(false);
+            }
         } else {
             setIndex(prev => prev + 1);
             audioPlayer.current.src = playlist[index + 1];
+            ImagePlayer.current.src = Image[index +1]
             audioPlayer.current.play();
+            if(audioPlayer.current.mute(true)){
+                audioPlayer.current.mute(false);
+            }
         }
     }
 
@@ -148,6 +166,7 @@ export default function Player() {
         if(index > 0) {
             setIndex(prev => prev - 1);
             audioPlayer.current.src = playlist[index - 1];
+            ImagePlayer.current.src = Image[index -1]
             audioPlayer.current.play();
         }
     }
@@ -162,6 +181,7 @@ export default function Player() {
 
     return (
         <Div>
+            <img className='audioimg' ref={ImagePlayer} src={currentSongImg}/>
             <audio src={currentSong} ref={audioPlayer} muted={mute} />
             <CustomPaper>
                 <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
@@ -186,7 +206,7 @@ export default function Player() {
                             width: '40%',
                             alignItems: 'center'
                         }}>
-                        <SkipPreviousIcon 
+                        <SkipPreviousIcon className='skip' 
                             sx={{
                                 color: 'gray', 
                                 '&:hover': {color: 'white'}
@@ -195,12 +215,12 @@ export default function Player() {
                         <FastRewindIcon sx={{color: 'gray', '&:hover': {color: 'white'}}} onClick={toggleBackward}/>
 
                         {!isPlaying
-                            ?   <PlayArrowIcon fontSize={'large'} sx={{color: 'white', '&:hover': {color: 'white'}}} onClick={togglePlay}/>
-                            :   <PauseIcon fontSize={'large'} sx={{color: 'black', '&:hover': {color: 'white'}}} onClick={togglePlay}/>
+                            ?   <PlayArrowIcon className='skip' fontSize={'large'} sx={{color: 'white', '&:hover': {color: 'white'}}} onClick={togglePlay}/>
+                            :   <PauseIcon className='skip' fontSize={'large'} sx={{color: 'white', '&:hover': {color: 'white'}}} onClick={togglePlay}/>
                         }
 
-                        <FastForwardIcon sx={{color: 'gray', '&:hover': {color: 'white'}}} onClick={toggleForward} />
-                        <SkipNextIcon sx={{color: 'gray', '&:hover': {color: 'white'}}} onClick={toggleSkipForward}/>
+                        <FastForwardIcon className='skip' sx={{color: 'gray', '&:hover': {color: 'white'}}} onClick={toggleForward} />
+                        <SkipNextIcon className='skip' sx={{color: 'gray', '&:hover': {color: 'white'}}} onClick={toggleSkipForward}/>
                     </Stack>
 
                     <Stack sx={{
@@ -217,6 +237,9 @@ export default function Player() {
                     <Typography sx={{color: 'white'}}>{formatTime(duration - elapsed)}</Typography>
                 </Stack>
             </CustomPaper>
+            <span className="play-btn" onClick={togglePlay} >
+                <img src={play} alt="" />
+            </span>
         </Div>
     )
 }

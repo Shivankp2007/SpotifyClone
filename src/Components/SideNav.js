@@ -4,6 +4,7 @@ import Search from "../Components/Middle/Images/Search.png";
 import YourLibrary from "../Components/Middle/Images/YourLibrary.png";
 import ThreeDot from "../Components/Middle/Images/ThreeDot.svg";
 import LikedSongs from '../Components/Middle/Images/LikedSongs.png'
+import {Link} from 'react-router-dom'
 
 function SideNav() {
   return (
@@ -14,16 +15,15 @@ function SideNav() {
         </div>
         <div className="top-SideNav-item-1">
           <div className="top-SideNav-item">
-            <a href="/">
-            <img src={Home} alt="" className="SideNav-img" />
-            <text>Home</text>
-            </a>
+            <Link to="/"><img src={Home} alt="" className="SideNav-img" /><text>Home</text> 
+            
+            </Link>
           </div>
           <div className="top-SideNav-item">
-            <a href="/search">
+            <Link to="/search">
               <img src={Search} alt="" className="SideNav-img" />
               <text>Search</text>
-            </a>
+            </Link>
           </div>
           <div className="top-SideNav-item">
             <a href="/yourlibrary">

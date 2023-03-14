@@ -1,7 +1,8 @@
 import React from 'react';
-import NavbarP from './Content/Navbar_P';
+import NavbarP from './Navbar_P';
 import Time from './Middle/Images/Time.png';
 import Bones from './Middle/Images/Bones.jpg'
+import Cover from './Middle/Images/Cover.jpg';
 
 function Playlist1() {
   return (
@@ -9,6 +10,7 @@ function Playlist1() {
       <NavbarP/>
       <div className="Content-playlist">
         <div className="playlist-head">
+          
           <div className="title">
             <img src="" alt="" />
             <text># Title</text>
@@ -19,6 +21,7 @@ function Playlist1() {
         </div>
         <div className="underline"></div>
         <div className="playlist-body">
+          <div className="song-warp">
           <div className="Song">
             <div className="song-1">
             <no>1</no>
@@ -35,6 +38,7 @@ function Playlist1() {
             <div className="date">2 days ago</div>
             <div className="timeinfo">3:56</div>
             </div>
+          </div>
           </div>
         </div>
       </div>

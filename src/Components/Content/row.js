@@ -1,5 +1,6 @@
 import React from 'react';
-import CardItem from "./ContentCardItem";
+import CardItem from "./Playlistcrd/ContentCardItem0";
+
 
 export default function row() {
   return (

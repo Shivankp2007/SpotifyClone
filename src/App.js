@@ -1,5 +1,5 @@
 import React from "react";
-import { Route,Routes,Switch } from "react-router-dom";
+import { Route,Routes } from "react-router-dom";
 import SearchPg from "./Components/SearchPg/SearchPg";
 import Homepg from "./Homepg";
 import SideNav from "./Components/SideNav";

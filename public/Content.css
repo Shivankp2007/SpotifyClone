@@ -80,6 +80,9 @@ plaintextinfo ul{
     display: flex;
     align-items: center;
 }
+.smtg{
+    margin-left: 70px;
+}
 .play-btn{
     width: 50px;
     height: 50px;
@@ -90,6 +93,9 @@ plaintextinfo ul{
     border-radius: 30px;
     margin: 20px;
     cursor: pointer;
+    position: fixed;
+    left: 233px;
+    top: 272px;
 }
 .threedotp{
     width: 30px;
@@ -106,10 +112,25 @@ plaintextinfo ul{
 .Song{
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 60px;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+
+}
+.song-warp:hover{
+    background-color: rgba(128, 128, 128, 0.304);
+    border-radius: 8px;
+    margin-top: 8px;
+}
+.song-warp{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px;
 }
 .song-img{
     width: 40px;
@@ -130,6 +151,26 @@ textnameinfo{
     font-size: 14px;
     margin-top: 2px;
 }
+.somee{
+    background-color: rgb(239 166 42);
+    width: 1125px;
+    rotate: 29deg;
+    height: 64px;
+    z-index: 99;
+    position: absolute;
+    top: -267px;
+}
+.contentt-down{
+    height: 84px;
+    width: 100%;
+    background-color: rgb(255, 170, 22);
+}
+.Cover{
+    height: 290px;
+    width: 281px;
+    margin-left: 750px;
+}
+
 .Song-name{
     display: flex;
     flex-direction: column;
@@ -156,4 +197,16 @@ textnameinfo{
 ::-webkit-scrollbar-thumb:not(:hover){
     background-color: transparent;
     transition: 10s;
+    opacity: 50%;
+}
+.audioimg{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    margin: 26px;
+    bottom: -35px;
+    z-index: 99;
+}
+.skip{
+    cursor: pointer;
 }

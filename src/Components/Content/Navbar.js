@@ -2,6 +2,7 @@ import React from 'react';
 import Back from '../Middle/Images/Back.png'
 import Front from '../Middle/Images/Front.png';
 import Profile from '../Middle/Images/Profile.png'
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (

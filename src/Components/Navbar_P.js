@@ -1,12 +1,13 @@
 import React from 'react';
-import Back from '../Middle/Images/Back.png'
-import Front from '../Middle/Images/Front.png';
-import Profile from '../Middle/Images/Profile.png'
-import logo from '../Middle/Images/logo.jpg';
-import play from '../Middle/Images/play.png'
-import { ThreeDRotationRounded } from '@mui/icons-material';
-import like from '../Middle/Images/like.png'
-import Threedotp from '../Middle/Images/Threedotp.svg'
+import Back from './Middle/Images/Back.png'
+import Front from './Middle/Images/Front.png';
+import Profile from './Middle/Images/Profile.png'
+import logo from './Middle/Images/logo.jpg';
+import play from './Middle/Images/play.png'
+import like from './Middle/Images/like.png'
+import Threedotp from './Middle/Images/Threedotp.svg';
+import Cover from './Middle/Images/Cover.jpg';
+
 
 
 function Navbar_P() {
@@ -29,6 +30,9 @@ function Navbar_P() {
                 </button>
             </div>
         </div>
+        <div className="contentt-down">
+        <div className="somee"></div>
+        <img className='Cover' src={Cover} alt="" />
         <div className="Content-bottom">
             <plaintext>Playlist</plaintext>
             <plaintextname>Hot Hits India</plaintextname>
@@ -42,10 +46,11 @@ function Navbar_P() {
                 </ul>
             </plaintextinfo>
         </div>
+        </div>
     </div>
     <div className="Content-down">
     <div className="Content-actions">
-        <span className="play-btn">
+        <span className="play-btn" >
             <img src={play} alt="" />
         </span>
         
