@@ -36,6 +36,7 @@ import bonesm from './Components/Middle/Images/bonesm.jpg'
 
 
 import play from './Components/Middle/Images/play.png'
+
 // #region -------- Styled Components -----------------------------------------
 const Div = styled('div')(({theme}) => ({
     backgroundColor: 'black',
@@ -57,7 +58,6 @@ const CustomPaper = styled(Paper)(({theme}) => ({
     alignItems:'center'
     
 }))
-
 const PSlider = styled(Slider)(({theme, ...props}) => ({
     color: 'white',
     height: 2,
@@ -237,7 +237,7 @@ export default function Player() {
                     <Typography sx={{color: 'white'}}>{formatTime(duration - elapsed)}</Typography>
                 </Stack>
             </CustomPaper>
-            <span className="play-btn" onClick={togglePlay} >
+            <span id='spa' className="play-btn" onClick={togglePlay} >
                 <img src={play} alt="" />
             </span>
         </Div>
