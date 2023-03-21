@@ -4,6 +4,7 @@ body{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .bck-frt-btn {
     background-color: #121212;
     border-radius: 100px;
@@ -13,6 +14,7 @@ body{
     cursor: pointer;
     border: transparent;
 }
+
 .App{
     display: flex;
 }
@@ -366,4 +368,13 @@ ul{
 .carddown{
     display: flex;
     flex-direction: column;
+}
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: #121212;
+    position: relative;
+    z-index: -1;
+}
+.Content-middle{
+    background-color: #121212;
 }

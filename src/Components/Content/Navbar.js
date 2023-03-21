@@ -2,15 +2,18 @@ import React from 'react';
 import Back from '../Middle/Images/Back.png'
 import Front from '../Middle/Images/Front.png';
 import Profile from '../Middle/Images/Profile.png'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { Navigate } from "react-router-dom";
+
 
 function Navbar() {
+  let nav = useNavigate();
   return (
     <div className="Content-Up">
         <div className="Content-top">
             <div className="top-left">
-            <button className="bck-frt-btn"><img src={Back} alt="" /></button>
-            <button className="bck-frt-btn"><img src={Front} alt="" /></button>
+            <button className="bck-frt-btn" onClick={() => nav(-1)} ><img src={Back} alt="" /></button>
+            <button className="bck-frt-btn" onClick={() => nav(1)} ><img src={Front} alt="" /></button>
             </div>
             <div className="top-right">
                 <button className="Pre-btn">Premium Plans</button>
