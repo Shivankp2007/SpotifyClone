@@ -1,16 +1,11 @@
 import React from 'react';
-import CardItem from "./Playlistcrd/ContentCardItem0";
+import CardItem from "./Playlistcrd/Card";
 
 
 export default function row() {
   return (
     <div className='row'>
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
+      <h1>Made for you</h1>
       <CardItem />
     </div>
   )

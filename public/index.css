@@ -226,6 +226,7 @@ font-weight: bold;
     font-weight: bold;
     text-decoration: none;
     color: white;
+    padding: 5px 10px 5px 10px;
 }
 .card-info{
     font-size: 14px;

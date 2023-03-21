@@ -80,8 +80,45 @@ plaintextinfo ul{
     display: flex;
     align-items: center;
 }
+.row-1{
+    display: flex;
+    /* background: white; */
+    height: 300px;
+    background-color: #121212;
+
+}
+.des{
+    color: #7e7e7e;
+    /* margin-top: 6px; */
+    font-size: 16px;
+    padding: 10px;
+    /* margin: unset; */
+    padding: 5px 10px 0 10px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 273px;
+    background-color: #121212;
+    margin-bottom: 100px;
+    margin-top: 2px;
+}
 .smtg{
     margin-left: 70px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 182px;
+}
+.CardCover{
+    display: flex;
+    background: #181818;
+    height: 273px;
+    margin: 16px;
+    border-radius: 8px;
 }
 .play-btn{
     width: 50px;
@@ -96,6 +133,9 @@ plaintextinfo ul{
     position: fixed;
     left: 233px;
     top: 272px;
+}
+.row-1{
+    display: flex;
 }
 .threedotp{
     width: 30px;

@@ -1,7 +1,7 @@
 import React from "react";
-import Itemrow from "./Itemrow";
 import MiddleRow from "../Middle/MiddleRow";
 import Navbar from "./Navbar";
+import Row from './row'
 
 
 function Content() {
@@ -13,12 +13,12 @@ function Content() {
             <div className="wish">Good Evening</div>
             <MiddleRow/>
             <MiddleRow/>
-        </div>
-      <Itemrow/>
-      <Itemrow/>
-      <Itemrow/>
-      <Itemrow/>
-      <Itemrow/>
+        </div> 
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
     </div>
   );
 }

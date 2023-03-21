@@ -1,5 +1,5 @@
 import React from 'react';
-import MiddleCard from './MiddleCard';
+import MiddleCard from '../Content/MiddleCard';
 
 function MiddleRow() {
   return (
