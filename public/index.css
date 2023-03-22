@@ -16,8 +16,14 @@ body{
 }
 
 .App{
-    display: flex;
+    height: 100vh;
+    width: 100%;
 }
+.top-SideNav-ite{
+    display: flex;
+    padding: 10px;
+}
+
 .Content{
     height: 100%;
     width: 1676px;
@@ -28,6 +34,18 @@ body{
 }
 .Content-item{
     background-color: #121212;
+}
+.sidenavimg{
+    background: linear-gradient(135deg,#450af5,#c4efd9);
+    border-radius: 2px;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+    margin-right: 20px;
 }
 .css-advu14-MuiPaper-root {
     background-color: #181818;

@@ -2,7 +2,7 @@ import React from 'react';
 import NavbarP from './Navbar_P';
 import Time from './Middle/Images/Time.png';
 import Bones from './Middle/Images/Bones.jpg'
-import Cover from './Middle/Images/Cover.jpg';
+
 
 function Playlist2() {
   return (

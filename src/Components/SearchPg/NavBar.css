@@ -1,0 +1,15 @@
+.Nav{
+    background-color: red;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+}
+
+.SearchPg{
+    height: 100%;
+    width: 1676px;
+    position: absolute;
+    left: 227px;
+    display: flex;
+    flex-direction: column;
+}

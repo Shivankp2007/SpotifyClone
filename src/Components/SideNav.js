@@ -34,12 +34,15 @@ function SideNav() {
         </div>
         <div className="top-SideNav-item-2">
           <div className="top-SideNav-item">
-            <img src={Home} alt="" className="SideNav-img" />
+            <img src={Home} alt=""  />
             Home
           </div>
-          <div className="top-SideNav-item">
-            <img src={LikedSongs} alt="" className="SideNav-img" />
-            Home
+          <div className="top-SideNav-ite">
+            <div className="sidenavimg">
+            <img src={LikedSongs} alt=""  />
+            </div>
+            <div className="te">Home</div>
+            
           </div>
         </div>
       </div>
